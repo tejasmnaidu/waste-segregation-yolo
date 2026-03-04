@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 
 # Load model
-model = YOLO("models/yolov8_waste.pt")
+model = YOLO("runs/detect/waste_big_v15/weights/best.pt")
 
 st.title("♻️ Waste Segregation - Image Detector")
 

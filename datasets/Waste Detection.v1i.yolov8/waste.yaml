@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 14
+names: ['eletronik', 'kaca', 'kain', 'kardus', 'karet', 'kertas', 'kulit', 'logam', 'plastik', 'pohon', 'rokok', 'sampah_medis', 'sisa_makanan', 'styrofoam']
+
+roboflow:
+  workspace: tejass-workspace-gdztv
+  project: waste-detection-zyadm-miwow
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tejass-workspace-gdztv/waste-detection-zyadm-miwow/dataset/1

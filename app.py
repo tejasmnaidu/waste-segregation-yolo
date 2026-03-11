@@ -7,7 +7,7 @@ import cv2
 # Load model
 model = YOLO("models/best.pt")
 
-st.title("♻️ Waste Segregation - Image Detector")
+st.title(" Waste Segregation - Image Detector")
 
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
@@ -17,7 +17,7 @@ if uploaded_file is not None:
 
     img_array = np.array(image)
 
-    results = model(img_array, conf=0.7, iou=0.5)
+    results = model(img_array, conf=0.2, iou=0.5)
 
     annotated = results[0].plot()
     annotated_rgb = cv2.cvtColor(annotated, cv2.COLOR_BGR2RGB)

@@ -1,7 +1,10 @@
 venv/
+venv311/
 runs/
 __pycache__/
 *.pyc
 *.pt
 datasets/images
 datasets/labels
+datasets/**/images
+datasets/**/labels
